@@ -1794,6 +1794,11 @@ input, select, textarea {
 		font-size: 2em;
 	}
 
+	.icons img {
+		height: 50px;
+		padding-right: 10px;
+	}
+
 /* Form */
 
 	form {
