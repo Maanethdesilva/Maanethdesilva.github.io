@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Web Gallery</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/images.css" rel="stylesheet" type="text/css" />
+    <link href="style/comments.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="js/index.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Web Gallery</h1>
+    </header>
+
+    <div>
+      <div id="image-display"></div>
+    </div>
+    <div class="image_buttons">
+      <button id="prev_image">Previous</button>
+      <button id="next_image">Next</button>
+    </div>
+    <div>
+      <div class="add_image">
+        <p class="subheading">Add image</p>
+        <p class="toggle">Show</p>
+      </div>
+      <form id="add_image_form">
+        <input id="image_title" type="text" placeholder="Title" />
+        <input id="image_author" type="text" placeholder="Author" />
+        <input id="image_url" type="text" placeholder="URL" />
+        <input class="submit_btn" type="submit" />
+      </form>
+    </div>
+    <div id="comments">
+      <p class="subheading">Comment section</p>
+      <div id="comment_section"></div>
+      <button id="newer">Newer</button>
+      <button id="older">Older</button>
+
+      <p class="subheading">Comment form</p>
+      <form id="comment_section_form">
+        <input id="comment_author" type="text" placeholder="Author" />
+        <input id="comment_content" type="text" placeholder="Content" />
+        <input class="submit_btn" type="submit" />
+      </form>
+    </div>
+  </body>
+</html>

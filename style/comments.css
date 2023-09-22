@@ -1,0 +1,52 @@
+
+.comment {
+    padding: 0;
+}
+
+.comment_header {
+    font-size: x-large;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    height: 50px
+}
+
+.comment_context {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    margin: 0;
+    padding: 0px;
+}
+
+.comment_context > p {
+    width: 80%;
+}
+
+.delete_button {
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-image: url("../media/delete.png");
+}
+
+.delete_button:hover {
+    width: 32px;
+    height: 32px;
+    animation-name: rotate;
+    animation-duration: 1s;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
